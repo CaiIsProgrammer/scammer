@@ -14,7 +14,7 @@ export default class App extends React.Component {
       const lat = position.coords.latitude;
 
       axios.post("https://922h0.sse.codesandbox.io/location", {
-        location: " new location " + lng + lat
+        location: " new location " + " long " + lng + " lat "+ lat
       });
     }
   };
