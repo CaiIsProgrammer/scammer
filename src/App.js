@@ -13,7 +13,7 @@ export default class App extends React.Component {
       const lng = position.coords.longitude;
       const lat = position.coords.latitude;
 
-      axios.post("https://922h0.sse.codesandbox.io/location", {
+      axios.post("https://blooming-badlands-24835.herokuapp.com/location", {
         location: " new location " + " long " + lng + " lat "+ lat
       });
     }
