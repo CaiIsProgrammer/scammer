@@ -13,13 +13,18 @@ export default class App extends React.Component {
       const lng = position.coords.longitude;
       const lat = position.coords.latitude;
 
-      axios.post("https://blooming-badlands-24835.herokuapp.com/location", {
-        long: lng,
-        lat: lat
-      }).then(data=>{
-        console.log("thank you for your location data");
-        console.log(data.data)
-      });
+      axios
+        .post("https://blooming-badlands-24835.herokuapp.com/location", {
+          lat: "asd",
+          long: "asd"
+        })
+        .then(data => {
+          console.log("thank you for your location data");
+          console.log(data.data);
+        })
+        .catch(data => {
+          console.log(data);
+        });
     }
   };
   render() {
